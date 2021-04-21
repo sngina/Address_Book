@@ -41,15 +41,17 @@ $(document).ready(function(){
      newContact.location.push(newAddress);
 
     $("ul#displayContacts").append("<li class ='moreDetails'>" + newContact.fullName() + "</li>");
-    $(".moreDetails").click(function(){
-    $("#fname").text(newContact.first) 
-    $("#sname").text(newContact.last)    
-    $("#mail").text(newContact.email)    
-    $("#tele").text(newContact.phone)    
-    $("#street").text(newContact.location.Location[0])    
-    $("#city").text(newContact.fullName)    
-    $("#county").text(newContact.fullName)    
 
+    $(".moreDetails").last().click(function(){
+      $("#detail").slideToggle();
+      $("#detailheading").text(newContact.fullName());
+      $("#fname").text(newContact.first);
+      $("#sname").text(newContact.last);  
+      $("#mail").text(newContact.email);   
+      $("#tele").text(newContact.phone);   
+      $("#stree").text(newContact.location[0].street);
+      $("#cty").text(newContact.location[0].city);
+      $("#count").text(newContact.location[0].county);   
     })
  })
 })
