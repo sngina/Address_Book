@@ -1,5 +1,5 @@
 //  the business logic
-function contact (first , last ,email ,phone, location) {
+function contact(first , last ,email ,phone, location) {
 
 this.first = first;
 this.last = last;
@@ -19,13 +19,14 @@ Location.prototype.address = function(){
 }
 //the user interface
 $(document).ready(function(){
- $(".form-group").submit(function(){
+ $("#contact").submit(function(event){
      event.preventDefault();
      var userFirstName = $("input#firstName").val();
      var userSecondName = $("input#lastName").val();
      var userEmail = $("input#email").val();
      var userNumber = parseInt($("input#phone"));
-     var newContact = new Contact (userFirstName  ,userSecondName);
+     var newContact = new contact(userFirstName  ,userSecondName);
     
+     console.log(userFirstName);
  })
 })
