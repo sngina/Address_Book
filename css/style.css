@@ -3,3 +3,58 @@ body {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.landing {
+    height: 20vh;
+    text-align: center;
+    padding-top: 12px;
+    animation: pop-in .6s ease-out forwards;
+    font-family: 'Dancing Script', cursive;
+    font-size: 150px;
+    color: black;
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: 0%;
+    }
+    50% {
+      margin-left: 300px;
+    }
+    100% {
+      margin-left: 0%;
+    }
+  }
