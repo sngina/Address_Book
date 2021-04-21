@@ -6,7 +6,16 @@ this.last = last;
 this.email = email;
 this.phone = phone;
 this.location =[];
+}
 
+function Location(street, town, county){
+  this.street = street;
+  this.town = town;
+  this.county = county;
+}
+
+Location.prototype.address = function(){
+  return this.street + "," + this.town + "," + this.county;
 }
 //the user interface
 $(document).ready(function(){
