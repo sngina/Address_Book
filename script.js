@@ -40,7 +40,16 @@ $(document).ready(function(){
     
      newContact.location.push(newAddress);
 
-    $("ul#displayContacts").append("<li>" + newContact.fullName() + "</li>");
+    $("ul#displayContacts").append("<li class ='moreDetails'>" + newContact.fullName() + "</li>");
+    $(".moreDetails").click(function(){
+    $("#fname").text(newContact.first) 
+    $("#sname").text(newContact.last)    
+    $("#mail").text(newContact.email)    
+    $("#tele").text(newContact.phone)    
+    $("#street").text(newContact.location.Location[0])    
+    $("#city").text(newContact.fullName)    
+    $("#county").text(newContact.fullName)    
 
+    })
  })
 })
