@@ -5,7 +5,7 @@ body {
 }
 
 .landing {
-    height: 20vh;
+    height: 30vh;
     text-align: center;
     padding-top: 12px;
     animation: pop-in .6s ease-out forwards;
@@ -58,3 +58,9 @@ body {
       margin-left: 0%;
     }
   }
+
+  .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
