@@ -43,7 +43,7 @@ $(document).ready(function(){
     $("ul#displayContacts").append("<li class ='moreDetails'>" + newContact.fullName() + "</li>");
 
     $(".moreDetails").last().click(function(){
-      $("#detail").slideToggle();
+      $(".view").slideToggle();
       $("#detailheading").text(newContact.fullName());
       $("#fname").text(newContact.first);
       $("#sname").text(newContact.last);  
